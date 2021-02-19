@@ -7,8 +7,34 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    <style>
+        .container {
+            display: flex;
+            /* flex-direction: column-reverse; */
+            /* align-items: center; */
+            /* justify-content: space-between; */
+        }
+
+        p {
+            border: 2px solid green;
+        }
+        .item:nth-child(1) {
+            height: 200px;
+        }
+        .item:nth-child(2) {
+            height: 100px;
+            flex-grow: 2;
+        }
+        .item:nth-child(3) {
+            height: 300px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello world</h1>
+    <div class="container">
+        <p class="item">Первый элемент</p>
+        <p class="item">Второй элемент</p>
+        <p class="item">Третий элемент</p>
+    </div>
 </body>
 </html>

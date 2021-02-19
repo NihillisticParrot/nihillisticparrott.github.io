@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+            text-align: center;
+        }
+        .menu {
+            flex-basis: 20%;
+            background-color: cyan;
+        }
+        .wrapper {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            flex-basis: 20%;
+            background-color: red;
+        }
+        .green-wrapper {
+            flex-grow: 1;
+            display: flex;
+        }
+        .left, .right {
+            flex-basis: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .left {
+            background-color: blue;
+        }
+        .right {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            menu
+        </div>
+        <div class="wrapper">
+            <div class="header">
+                header
+            </div>
+            <div class="green-wrapper">
+                <div class="left">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores porro, tenetur veritatis voluptate voluptatum repellendus eligendi iste id accusantium est amet quos nemo maxime. Sint itaque optio non quia deleniti.
+                </div>
+                <div class="right">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aspernatur tenetur adipisci maxime, hic ullam accusantium tempora non nam iure velit expedita exercitationem quae itaque consequatur necessitatibus facere amet distinctio.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

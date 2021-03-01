@@ -1,42 +1,74 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homework111</title>
+    <title>html/css</title>
     <style>
-        body {
+        .wrapper {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
             padding: 0;
-            margin: 0;
             height: 100vh;
-            background-color: #775ada;
         }
-        nav {
-            width: 100%;
+        .header {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+            background-color: darkslategrey;
+        }
+        .container1 {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+        .container2 {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
             background-color: red;
-            text-align: right;
         }
-        nav > a {
-            display: inline-block;
-            padding: 1em .75em;
-            color: white;
-            font-size: 1.25em;
-            font-weight: bold;
-            text-decoration: none;
+        .container3 {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+            background-color: green;
         }
-        h1 {
-            font-weight: bold;
-            color: white;
+        .img1, .img2 {
+            height: 100%;
+            width: 20%;
+            background-color: greenyellow;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="" class="nav">О нас</a>
-        <a href="" class="nav">О нас</a>
-        <a href="" class="nav">О нас</a>
-    </nav>
-    <h1>Используйте display: inline-block;</h1>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Название</h1>
+        </div>
+        <div class="container1">
+            <div class="img1"></div>
+            <div class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ut deserunt magni vitae doloremque quaerat hic reiciendis nisi, modi laboriosam rem fugiat quis fuga adipisci assumenda veritatis a obcaecati in?</div>
+        </div>
+        <div class="container2">
+            <div class="text2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores necessitatibus repellendus ullam? Non blanditiis nemo ex earum ipsum ad, consectetur id, tempore suscipit accusantium atque necessitatibus aliquid neque velit placeat.</div>
+            <div class="img2"></div>
+        </div>
+        <div class="container3">
+            <div class="button">
+                <button>Кнопка</button>
+            </div>
+        </div>
+
+    </div>
+    
 </body>
 </html>

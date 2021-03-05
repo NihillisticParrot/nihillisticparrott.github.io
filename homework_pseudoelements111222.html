@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма имя почта</title>
+</head>
+
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fcefee;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        background-color: rgb(9, 9, 148);
+        border: 4px black;
+        padding: 0.5em;
+        border-radius: 10px;
+    }
+
+    .name {
+        margin: .75em 0;
+        padding: .5em;
+        border-radius: 5px;
+    }
+
+    input {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: large;
+    }
+
+    .email {
+        margin: .75em 0.75em;
+        padding: .5em;
+        border-radius: 5px;
+    }
+
+    .input[type=submit] {
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: #faee1c;
+    }
+
+    form:hover {}
+</style>
+
+<body>
+    <form class="form">
+        <div class="name">Введите имя</div>
+        <input type="text" name="" id="" class="input">
+        <div class="email">Ваш e-mail:</div>
+        <input type="text" name="" id="" class="input">
+        <input type="submit" value="Поиск">
+    </form>
+</body>
+
+</html>

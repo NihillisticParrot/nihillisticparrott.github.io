@@ -61,14 +61,22 @@
         color: black;
     }
 
-    form:hover {}
+    form:hover {
+        box-shadow: 1px 1px 0 0 #9c1de7,
+            2px 2px 0 0 #9c1de7,
+            3px 3px 0 0 #9c1de7,
+            4px 4px 0 0 #9c1de7,
+            5px 5px 0 0 #9c1de7,
+            6px 6px 0 0 #9c1de7;
+        transform: translate(-6px, -6px);
+    }
 </style>
 
 <body>
     <form class="form">
-        <div class="name">Введите имя</div>
+        <div class="name">Введите Имя:</div>
         <input type="text" name="" id="" class="input">
-        <div class="email">Ваш e-mail:</div>
+        <div class="email">Ваш E-mail:</div>
         <input type="text" name="" id="" class="input">
         <input type="submit" value="Поиск">
     </form>

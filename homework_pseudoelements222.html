@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТЕстируем анимацию</title>
+</head>
+    <style>
+            body {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            background-color: #78a8bc;
+            overflow: hidden;
+            margin: 0;
+        }
+        .blocks {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .news, .pics, .info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: cornsilk;
+            font-weight: bold;
+            font-size: 2em;
+            padding: .75em;
+            width: 100%;
+            transition: all ease .5s;
+        }
+        .news:hover, .pics:hover, .info:hover {
+            width: 200%;
+        }
+        .news {
+            background-color: black;
+        }
+        .pics {
+            background-color: green;
+        }
+        .info {
+            background-color: peru;
+        }
+    </style>
+<body>
+    <div class="blocks">
+        <div class="news">Новости</div>
+        <div class="pics">Картинки</div>
+        <div class="info">Информация</div>
+    </div>
+</body>
+</html>

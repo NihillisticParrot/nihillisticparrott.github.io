@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Домашнее задание по Paralax Effect</title>
+    <style>
+        body {
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .bgimg-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('img/night.jpg');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            overflow-x: hidden;
+        }
+        .bgimg-2 {
+            display: block;
+            height: 100vh;
+            background-image: url('img/night_flip.jpg');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            overflow-x: hidden;
+        }
+        .doityourself {
+            margin: 0;
+            padding: 2em;
+            background-color: rgb(99, 102, 99);
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            color: white;
+        }
+        @keyframes falling_down {
+        0% {
+            top: -5px;
+        }        
+        100% {
+            top: 199vh;
+        }
+        .star {
+        position: absolute;
+        background-color: white;
+        top: 0;
+        }
+        .star:nth-child(1) {
+        width: 5px;
+        height: 5px;
+        left: 6vw;
+        animation: falling_down 5s .2s linear infinite;
+    }
+    .star:nth-child(2) {
+        width: 5px;
+        height: 5px;
+        left: 16vw;
+        animation: falling_down 8s 5s linear infinite;
+    }
+    .star:nth-child(3) {
+        width: 5px;
+        height: 5px;
+        left: 48vw;
+        animation: falling_down 6s 2s linear infinite;
+    }
+    .star:nth-child(4) {
+        width: 5px;
+        height: 5px;
+        left: 66vw;
+        animation: falling_down 7s .9s linear infinite;
+    }
+    .star:nth-child(5) {
+        width: 5px;
+        height: 5px;
+        left: 86vw;
+        animation: falling_down 6s 1s linear infinite;
+    }                   
+    </style>
+</head>
+
+<body>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="bgimg-1"></div>
+    <div class="doityourself">СДЕЛАЙ САМ! НЕ ПОДСМАТРИВАЙ В КОНСОЛЬ РАЗРАБОТЧИКА!</div>
+    <div class="bgimg-2"></div>
+</body>
+
+</html>

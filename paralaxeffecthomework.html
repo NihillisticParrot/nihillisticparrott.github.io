@@ -11,6 +11,7 @@
             margin: 0;
             overflow-x: hidden;
         }
+
         .bgimg-1 {
             display: flex;
             justify-content: center;
@@ -23,6 +24,7 @@
             background-size: cover;
             overflow-x: hidden;
         }
+
         .bgimg-2 {
             display: block;
             height: 100vh;
@@ -33,57 +35,69 @@
             background-size: cover;
             overflow-x: hidden;
         }
+
         .doityourself {
             margin: 0;
             padding: 2em;
-            background-color: rgb(99, 102, 99);
+            background-color: darkslategrey;
             text-align: center;
             font-size: 2em;
             font-weight: bold;
             color: white;
+            transform: translateY(-50%);
+            position: absolute;
+            width: 100%;
         }
+
         @keyframes falling_down {
-        0% {
-            top: -5px;
-        }        
-        100% {
-            top: 199vh;
+            0% {
+                top: -5px;
+            }
+
+            100% {
+                top: 199vh;
+            }
         }
-        .star {
-        position: absolute;
-        background-color: white;
-        top: 0;
-        }
-        .star:nth-child(1) {
-        width: 5px;
-        height: 5px;
-        left: 6vw;
-        animation: falling_down 5s .2s linear infinite;
-    }
-    .star:nth-child(2) {
-        width: 5px;
-        height: 5px;
-        left: 16vw;
-        animation: falling_down 8s 5s linear infinite;
-    }
-    .star:nth-child(3) {
-        width: 5px;
-        height: 5px;
-        left: 48vw;
-        animation: falling_down 6s 2s linear infinite;
-    }
-    .star:nth-child(4) {
-        width: 5px;
-        height: 5px;
-        left: 66vw;
-        animation: falling_down 7s .9s linear infinite;
-    }
-    .star:nth-child(5) {
-        width: 5px;
-        height: 5px;
-        left: 86vw;
-        animation: falling_down 6s 1s linear infinite;
-    }                   
+            .star {
+                position: absolute;
+                background-color: white;
+                top: 0;
+            }
+
+            .star:nth-child(1) {
+                width: 3px;
+                height: 3px;
+                left: 4vw;
+                animation: falling_down 7s .2s linear infinite;
+            }
+
+            .star:nth-child(2) {
+                width: 3px;
+                height: 3px;
+                left: 14vw;
+                animation: falling_down 7.5s 5s linear infinite;
+            }
+
+            .star:nth-child(3) {
+                width: 3px;
+                height: 3px;
+                left: 44vw;
+                animation: falling_down 6.5s 2s linear infinite;
+            }
+
+            .star:nth-child(4) {
+                width: 3px;
+                height: 3px;
+                left: 62vw;
+                animation: falling_down 6s .9s linear infinite;
+            }
+
+            .star:nth-child(5) {
+                width: 3px;
+                height: 3px;
+                left: 82vw;
+                animation: falling_down 5.75s 1s linear infinite;
+            }
     </style>
 </head>
 

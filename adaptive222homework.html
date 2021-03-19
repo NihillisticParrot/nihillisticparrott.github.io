@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Адаптивный дизайн</title>
+    <style>
+        html,
+        body {
+            margin: 30;
+            overflow: hidden;
+        }
+
+        .section {
+            width: 100vw;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .grey,
+        .blue,
+        .pink {
+            height: 15vh;
+            text-align: center;
+            padding: 4em 0 0 0;
+        }
+
+        .grey {
+            background-color: grey;
+            flex-grow: 1;
+        }
+
+        .blue {
+            background-color: blue;
+            flex-grow: 2;
+        }
+
+        .pink {
+            background-color: pink;
+            flex-grow: 1;
+        }
+
+        @media (max-width: 1124px) {
+            .section > .container  {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section">
+        <div class="container">
+            <div class="grey">Левый элемент</div>
+            <div class="blue">Центральный элемент</div>
+            <div class="pink">Правый элемент</div>
+        </div>
+    </div>
+</body>
+
+</html>

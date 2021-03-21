@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 2fr 4fr 2fr;
+}
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.img1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url(night.jpg);
+    height: 50%;
+    border-top-left-radius: 10px;
+}
+
+.life {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: darkkhaki;
+    font-size: 2em;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    height: 50%;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    background-color: blue;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 25%;
+    font-size: 3em;
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+
+.text {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    background-color: white;
+    font-size: 1.4em;
+    color: blue;
+    font-family: 'Pacifico', cursive;
+    height: 75%;
+    padding-left: 10px;
+    position: relative;
+}
+
+.label {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    font-size: 2em;
+    color: peru;
+    font-family: 'Lato', sans-serif;
+    height: 2em;
+    width: 170px;
+    position: absolute;
+    right: 250px;
+    bottom: 0;
+    margin: 10px;
+    padding: 0;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 500;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    height: 25%;
+    border-top-right-radius: 10px;
+}
+
+.personal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    background-color: darkkhaki;
+    font-size: 2em;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    height: 25%;
+}
+
+.img2 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    background-color: violet;
+    background-image: url(ship.png);
+    height: 50%;
+}

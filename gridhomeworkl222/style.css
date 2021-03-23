@@ -2,142 +2,151 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    overflow: hidden;
 }
 
 .grid-container {
     display: grid;
     height: 100%;
-    grid-template-rows: 2fr 2fr;
-    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-columns: 30% 25% 15% 5% 25%;
+    grid-template-rows: 25% 25% 30% 10% 10%;
 }
 
 
 .left {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    display: grid;
+    
+
 }
 
 .img1 {
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 1;
-    grid-column-end: 3;
-    background-image: url(night.jpg);
-    height: 50%;
-    border-top-left-radius: 10px;
+    grid-column-end: 2;
+    background-image: url('night.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
 }
 
-.life {
+.caption1 {
     display: flex;
     justify-content: center;
     align-items: center;
     grid-row-start: 3;
-    grid-row-end: 5;
+    grid-row-end: 6;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     background-color: darkkhaki;
     font-size: 2em;
     color: white;
     font-family: 'Lato', sans-serif;
-    height: 50%;
 }
 
-.center {
-    display: flex;
-    flex-direction: column;
-}
 .header {
-    background-color: blue;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 7;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    height: 25%;
-    font-size: 3em;
+    background-color: blue;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    font-size: 2em;
     color: white;
     font-family: 'Pacifico', cursive;
 }
 
-.text {
-    grid-row-start: 2;
-    grid-row-end: 5;
-    grid-column-start: 3;
-    grid-column-end: 7;
-    background-color: white;
-    font-size: 1.4em;
-    color: blue;
-    font-family: 'Pacifico', cursive;
-    height: 75%;
-    padding-left: 10px;
-    position: relative;
+}
+.logo {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
 }
 
-.label {
+.nav div {
+    display: inline-block;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    margin-right: 30px;
+}
+
+.burger > span {
+    display: inline-block;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    height: 5px;
+    width: 35px;
+    background-color: white;
+    margin-top: 5px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: white;
+    font-size: 1em;
+    color: blue;
+    font-family: 'Pacifico', cursive;
+    padding-left: 10px;
+}
+
+.caption2 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
     background-color: white;
     font-size: 2em;
     color: peru;
     font-family: 'Lato', sans-serif;
-    height: 2em;
-    width: 170px;
-    position: absolute;
-    right: 250px;
-    bottom: 0;
-    margin: 10px;
-    padding: 0;
 }
+
 .right {
     display: flex;
     flex-direction: column;
 }
-
-.navbar {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 7;
-    grid-column-end: 9;
-    background-color: blue;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 2em;
-    font-weight: 500;
-    color: white;
-    font-family: 'Pacifico', cursive;
-    height: 25%;
-    border-top-right-radius: 10px;
-}
-
-.personal {
+.caption3 {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     grid-row-start: 2;
     grid-row-end: 3;
-    grid-column-start: 7;
-    grid-column-end: 9;
+    grid-column-start: 4;
+    grid-column-end: 6;
     background-color: darkkhaki;
     font-size: 2em;
     color: white;
     font-family: 'Lato', sans-serif;
-    height: 25%;
 }
 
 .img2 {
     grid-row-start: 3;
-    grid-row-end: 5;
-    grid-column-start: 7;
-    grid-column-end: 9;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 6;
     background-color: violet;
-    background-image: url(ship.png);
-    height: 50%;
+    background-image: url('ship.png');
+    background-size: cover;
+    background-position: center;
 }
